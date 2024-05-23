@@ -37,15 +37,15 @@ def _build_cice():
             comp_root_dir_ice = case.get_value("COMP_ROOT_DIR_ICE")
             paths = [
                 os.path.join(caseroot, "SourceMods", "src.cice"),
-                os.path.join(comp_root_dir_ice, "cice", "src", "cicecore", "shared"),
-                os.path.join(comp_root_dir_ice, "cice", "src", "icepack", "columnphysics"),
+                os.path.join(comp_root_dir_ice, "src", "cice", "cicecore", "shared"),
+                os.path.join(comp_root_dir_ice, "src", "cice", "icepack", "columnphysics"),
                 os.path.join(
-                    comp_root_dir_ice, "cice", "src", "cicecore", "cicedynB", "infrastructure"
+                    comp_root_dir_ice, "src", "cice", "cicecore", "cicedynB", "infrastructure"
                 ),
                 os.path.join(
                     comp_root_dir_ice,
-                    "cice",
                     "src",
+                    "cice",
                     "cicecore",
                     "cicedynB",
                     "infrastructure",
@@ -54,8 +54,8 @@ def _build_cice():
                 ),
                 os.path.join(
                     comp_root_dir_ice,
-                    "cice",
                     "src",
+                    "cice",
                     "cicecore",
                     "cicedynB",
                     "infrastructure",
@@ -63,21 +63,21 @@ def _build_cice():
                     "mpi",
                 ),
                 os.path.join(
-                    comp_root_dir_ice, "cice", "src", "cicecore", "cicedynB", "analysis"
+                    comp_root_dir_ice, "src", "cice", "cicecore", "cicedynB", "analysis"
                 ),
                 os.path.join(
-                    comp_root_dir_ice, "cice", "src", "cicecore", "cicedynB", "dynamics"
+                    comp_root_dir_ice, "src", "cice", "cicecore", "cicedynB", "dynamics"
                 ),
                 os.path.join(
-                    comp_root_dir_ice, "cice", "src", "cicecore", "cicedynB", "general"
+                    comp_root_dir_ice, "src", "cice", "cicecore", "cicedynB", "general"
                 ),
             ]
             if driver == "nuopc":
                 paths.append(
                     os.path.join(
                         comp_root_dir_ice,
-                        "cice",
                         "src",
+                        "cice",
                         "cicecore",
                         "drivers",
                         "nuopc",
